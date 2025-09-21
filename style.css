@@ -1,0 +1,246 @@
+body {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 70vh;
+}
+
+body,
+p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 28px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "inters", sans-serif;
+  font-weight: 600;
+}
+
+h4,
+.small {
+  font-weight: bold;
+}
+
+.small {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#projects .card img {
+  object-fit: cover;
+  height: 200px;
+}
+
+#photoProfil {
+  border-radius: 2%;
+  height: 400px;
+  width: auto;
+}
+
+#home {
+  min-height: calc(100vh - 56px); /* hauteur de la navbar */
+  padding: 2rem;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  color: white;
+}
+
+section#home .display-4,
+.lead {
+  font-weight: 400 !important;
+}
+
+.paragraph {
+  font-size: 20px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4 {
+  position: relative;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  background-color: #bbb;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-4 {
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline-4::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -11px;
+  background-color: #bbb;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left-4 {
+  padding: 0px 40px 20px 0px;
+  left: 0;
+}
+
+.right-4 {
+  padding: 0px 0px 20px 40px;
+  left: 50%;
+}
+
+.left-4::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  right: 30px;
+  border: medium solid rgba(37, 117, 252, 1);
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgba(37, 117, 252, 1);
+}
+
+.right-4::before {
+  content: " ";
+  position: absolute;
+  top: 18px;
+  z-index: 1;
+  left: 30px;
+  border: medium solid rgba(245, 87, 108, 1);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgba(245, 87, 108, 1) transparent transparent;
+}
+
+.right-4::after {
+  left: -14px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .main-timeline-4::after {
+    left: 31px;
+  }
+
+  .timeline-4 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .timeline-4::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left-4::after,
+  .right-4::after {
+    left: 18px;
+  }
+
+  .left-4::before {
+    right: auto;
+  }
+
+  .right-4 {
+    left: 0%;
+  }
+}
+
+.gradient-custom {
+  /* old browsers */
+  background: #6a11cb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    rgba(106, 17, 203, 0.5),
+    rgba(37, 117, 252, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to right,
+    rgba(106, 17, 203, 0.5),
+    rgba(37, 117, 252, 1)
+  );
+}
+
+.gradient-custom-4 {
+  /* old browsers */
+  background: #f093fb;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to left,
+    rgba(240, 147, 251, 1),
+    rgba(245, 87, 108, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to left,
+    rgba(240, 147, 251),
+    rgba(245, 87, 108, 1)
+  );
+}
+
+/* SKILLS CARD */
+/* Cards */
+.skill-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* img cards*/
+.skill-card img {
+  height: 60px;
+  width: auto;
+  max-width: 100%;
+}
+
+/* text style */
+.skill-card p {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Hover cards */
+.skill-card:hover {
+  background-color: #f7a08b;
+  color: #fff !important;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover cards p */
+.skill-card:hover p {
+  color: #fff;
+}
