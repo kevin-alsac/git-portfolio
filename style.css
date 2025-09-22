@@ -8,7 +8,7 @@ section {
 
 body,
 p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   line-height: 28px;
@@ -52,10 +52,6 @@ h4,
 section#home .display-4,
 .lead {
   font-weight: 400 !important;
-}
-
-.paragraph {
-  font-size: 20px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -243,4 +239,67 @@ section#home .display-4,
 /* Hover cards p */
 .skill-card:hover p {
   color: #fff;
+}
+
+/* BTS CARDS */
+/* CSS Grid 2 cards */
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 768px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* cards */
+.bts-card {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  border-top: 5px solid;
+  display: flex;
+  flex-direction: column;
+}
+
+.bts-card h4 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.bts-card p {
+  margin-top: 1rem;
+  color: #555;
+  font-weight: 400;
+}
+
+.bts-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bts-card-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cardSISR {
+  border-color: #2575fc;
+}
+
+#cardSLAM {
+  border-color: #a5a5a5;
 }
