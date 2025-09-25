@@ -26,6 +26,11 @@ h4,
   font-weight: bold;
 }
 
+.nav-link {
+  font-size: 16px !important;
+  font-weight: 500;
+}
+
 .small {
   color: rgba(255, 255, 255, 0.7);
 }
@@ -256,7 +261,60 @@ section#home .display-4,
   }
 }
 
-/* cards */
+/* section skills cards */
+.skills-category-block {
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills-category-block:hover {
+  border-color: rgba(37, 117, 252, 1);
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.skill-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card img {
+  width: 60px;
+  height: auto;
+}
+
+.skill-card .btn-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+  background-color: rgba(37, 117, 252, 1);
+  border: none;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skill-card:hover .btn-info {
+  opacity: 1;
+}
+
+/* software cards */
 .bts-card {
   background: white;
   border-radius: 10px;
@@ -296,8 +354,17 @@ section#home .display-4,
   justify-content: center;
 }
 
+.enCoursAquisition {
+  font-size: 0.8rem !important;
+  color: #f7a08b !important;
+}
+
+.skill-card:hover .enCoursAquisition {
+  color: white !important;
+}
+
 #cardSISR {
-  border-color: #2575fc;
+  border-color: rgba(37, 117, 252, 1);
 }
 
 #cardSLAM {
