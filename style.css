@@ -21,6 +21,10 @@ h3 {
   font-weight: 600;
 }
 
+.title-section {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+}
+
 h4,
 .small {
   font-weight: bold;
@@ -215,8 +219,11 @@ section#home .display-4,
   justify-content: center;
   align-items: center;
   text-align: center;
-  cursor: pointer;
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 /* img cards*/
@@ -292,26 +299,6 @@ section#home .display-4,
 .skill-card img {
   width: 60px;
   height: auto;
-}
-
-.skill-card .btn-info {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 25px;
-  height: 25px;
-  padding: 0;
-  line-height: 25px;
-  text-align: center;
-  color: white;
-  background-color: rgba(37, 117, 252, 1);
-  border: none;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.skill-card:hover .btn-info {
-  opacity: 1;
 }
 
 /* software cards */

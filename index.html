@@ -37,6 +37,9 @@
               <a class="nav-link" href="#skills">Mes compétences</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#veilleTechno">Veilles</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
@@ -48,9 +51,9 @@
       class="d-flex justify-content-center align-items-center text-center py-5 bg-light"
       id="home"
     >
-      <div class="container">
-        <h1 class="display-4">Bienvenue sur mon Portfolio</h1>
-        <p class="lead">Étudiant en BTS SIO SISR | Systèmes & Réseaux</p>
+      <div class="container title-section">
+        <h1 class="display-4">Étudiant en informatique</h1>
+        <p class="lead">BTS SIO Option SISR | Systèmes & Réseaux</p>
       </div>
     </section>
 
@@ -76,7 +79,8 @@
                 professionnelles, en associant la théorie à la pratique au
                 quotidien. Grâce à une organisation rigoureuse, je veille à
                 concilier efficacement mes responsabilités scolaires et mon
-                engagement professionnel.
+                engagement professionnel. Je souhaite évoluer dans le domaine en
+                tant qu’administrateur réseaux.
               </p>
             </div>
           </div>
@@ -290,8 +294,8 @@
 
     <section class="py-5 bg-light" id="skills">
       <div class="container">
-        <h2 class="mb-4 text-center">Mes Compétences</h2>
-        <p class="text-center mb-5">
+        <h2 class="mb-4">Mes Compétences</h2>
+        <p class="mb-5">
           Toutes ces connaissances ont été acquises de différentes façons : à la
           fois au travers de mes cours en BTS SIO, de mes premières expériences
           en milieu professionnel, mais aussi par mes recherches et mon
@@ -347,41 +351,39 @@
               <h3 class="mb-4 text-center">Système et réseau</h3>
               <div class="row g-3 justify-content-center flex-grow-1">
                 <div class="col-6 col-md-4 col-lg-4">
-                  <div class="skill-card h-100">
+                  <div
+                    class="skill-card h-100 pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-windows-server"
+                  >
                     <img
                       src="./images/microsoft.png"
                       alt="Windows Server Logo"
                       class="mb-2"
                     />
                     <p class="mb-0">Windows Server</p>
-                    <button
-                      class="btn btn-sm btn-info rounded-circle mt-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modal-windows-server"
-                    >
-                      i
-                    </button>
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-4">
-                  <div class="skill-card h-100">
+                  <div
+                    class="skill-card h-100 pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-windows"
+                  >
                     <img
                       src="./images/microsoft.png"
                       alt="Windows Logo"
                       class="mb-2"
                     />
                     <p class="mb-0">Windows</p>
-                    <button
-                      class="btn btn-sm btn-info rounded-circle mt-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modal-windows"
-                    >
-                      i
-                    </button>
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-4">
-                  <div class="skill-card h-100">
+                  <div
+                    class="skill-card h-100 pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-debian"
+                  >
                     <img
                       src="./images/debian.png"
                       alt="debian logo"
@@ -391,17 +393,14 @@
                     <p class="mb-0 enCoursAquisition">
                       (En cours d'acquisition)
                     </p>
-                    <button
-                      class="btn btn-sm btn-info rounded-circle mt-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modal-debian"
-                    >
-                      i
-                    </button>
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-4">
-                  <div class="skill-card h-100">
+                  <div
+                    class="skill-card h-100 pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-ubuntu"
+                  >
                     <img
                       src="./images/ubuntu.png"
                       alt="Ubuntu Logo"
@@ -411,17 +410,14 @@
                     <p class="mb-0 enCoursAquisition">
                       (En cours d'acquisition)
                     </p>
-                    <button
-                      class="btn btn-sm btn-info rounded-circle mt-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modal-ubuntu"
-                    >
-                      i
-                    </button>
                   </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-4">
-                  <div class="skill-card">
+                  <div
+                    class="skill-card h-100 pointer"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modal-cisco"
+                  >
                     <img
                       src="./images/cisco.png"
                       alt="Cisco Logo"
@@ -431,13 +427,6 @@
                     <p class="mb-0 enCoursAquisition">
                       (En cours d'acquisition)
                     </p>
-                    <button
-                      class="btn btn-sm btn-info rounded-circle mt-2"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modal-cisco"
-                    >
-                      i
-                    </button>
                   </div>
                 </div>
               </div>
@@ -446,6 +435,8 @@
         </div>
       </div>
     </section>
+
+    <!-- MODAL SECTION -->
 
     <div class="modal fade" id="modal-cisco" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
@@ -623,8 +614,8 @@
         <h2 class="mb-4">Mes Réalisations</h2>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card h-100">
-              <img src="project1.png" class="card-img-top" alt="Projet 1" />
+            <div class="card h-100 text-center pointer">
+              <h2 style="padding-bottom: 45%">PROJET 1</h2>
               <div class="card-body">
                 <h5 class="card-title">Projet 1</h5>
                 <p class="card-text">Description courte du projet 1.</p>
@@ -632,8 +623,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card h-100">
-              <img src="project2.png" class="card-img-top" alt="Projet 2" />
+            <div class="card h-100 text-center pointer">
+              <h2 style="padding-bottom: 45%">PROJET 2</h2>
               <div class="card-body">
                 <h5 class="card-title">Projet 2</h5>
                 <p class="card-text">Description courte du projet 2.</p>
@@ -641,8 +632,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card h-100">
-              <img src="project3.png" class="card-img-top" alt="Projet 3" />
+            <div class="card h-100 text-center pointer">
+              <h2 style="padding-bottom: 45%">PROJET 3</h2>
               <div class="card-body">
                 <h5 class="card-title">Projet 3</h5>
                 <p class="card-text">Description courte du projet 3.</p>
@@ -653,7 +644,40 @@
       </div>
     </section>
 
-    <section class="py-5 bg-light" id="contact">
+    <section class="py-5 bg-light" id="veilleTechno">
+      <div class="container">
+        <h2 class="mb-4">Veille Technologique</h2>
+        <div class="flex justify-center mb-10">
+          <p>
+            Dans le cadre de ma formation en BTS SIO option SISR, je pratique
+            régulièrement la veille technologique afin de rester informé des
+            évolutions dans le domaine de l'administration système et réseau,
+            avec un intérêt particulier pour les solutions Microsoft. J'utilise
+            des outils comme <span style="font-weight: bold">Feedly</span>, un
+            agrégateur de flux RSS, pour centraliser articles, actualités et
+            tutoriels sur des sujets tels que la gestion des serveurs Windows,
+            les stratégies de sécurité, la virtualisation ou les nouveautés
+            d'Active Directory. Cette veille me permet de consolider mes
+            compétences techniques tout en anticipant les évolutions et bonnes
+            pratiques de l’infrastructure IT, afin de proposer des solutions
+            adaptées dans un contexte professionnel.
+          </p>
+          <p class="pt-5">
+            En plus des informations fournis chaque semaine/mois, j'ai quelque
+            sites en favoris permettant de me tenir au courant des derniéres
+            actualités tel que
+            <span style="font-weight: bold">IT-Connect.fr </span> qui est un
+            site internet regroupant Plate-forme de cours sur l’administration
+            systèmes et réseau ainsi que des articles d'actualités, ou encore
+            <span style="font-weight: bold">Petri.com</span> un site regroupant
+            l'actualité Tutoriels et articles sur Windows Server, Active
+            Directory et Microsoft 365.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="contact">
       <div class="container">
         <h2 class="mb-4">Contactez-moi</h2>
         <form
